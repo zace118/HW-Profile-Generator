@@ -1,5 +1,5 @@
 const Employee = require('./employee');
 
-class Intern extends Employee {
+class Manager extends Employee {
     // stuff
 }
