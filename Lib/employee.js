@@ -1,22 +1,23 @@
 const inquirer = require('inquirer');
 
 class Employee {
-    constructor(name, id, title) {
+    constructor(name, id, email, title = "Employee") {
         this.name = name;
         this.id = id;
+        this.email = email;
         this.title = title;
     }
 
     getName() {
-        // Stuff
+        return this.name;
     }
 
     getId() {
-        // Stuff
+        return this.id;
     }
 
     getEmail() {
-        // Stuff
+        return this.email;
     }
 
     getRole() {
