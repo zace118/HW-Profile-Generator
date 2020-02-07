@@ -57,11 +57,11 @@ function initialPrompt() {
             console.log(res);
             // This pushes the team member into the empty "team" array.
             team.push(res);
-            console.log(team);
             moreTeam();
 
         }).catch(function (err) {
             console.log(err);
+            console.log(team);
         })
 };
 

@@ -1,0 +1,71 @@
+>>>I have the information of the entire team that has been entered....what now???
+>>>>>> I need to generate the cards. I don't really know the EASIEST way to do it dynamically, but I can at least make them based on some if statements.
+
+-------------------------------------------------------------------------
+
+>>>If...depending on the title....create a certain card.
+
+if (title === 'Intern') {
+    createIntern()
+}
+
+if (title === 'Engineer'){
+    createEngineer()
+}
+
+if (title === 'Manager'){
+    createManager()
+}
+
+
+-------------------------------------------------------------------------
+
+>>>Functions to do soooo.....
+
+function createIntern() {
+    return "<body>
+    <!-- Card -->
+    <div class="card" style="margin: 30px; width: 18rem;">
+        <div class="card-header" style="background-color:rgb(39, 91, 235); color: white; font-weight: 500;">
+            '${team.name}'<div>'${team.title}'</div>
+        </div>
+        <div class="card-body" style="margin: 10px;">
+            <li class="list-group-item">Email: '${team.email}'</li>
+            <li class="list-group-item">School: '${team.school}'</li>
+            <li class="list-group-item">ID#: </li>
+        </div>
+    </div>
+</body>"
+}
+
+function createEngineer() {
+    return "<body>
+    <!-- Card -->
+    <div class="card" style="margin: 30px; width: 18rem;">
+        <div class="card-header" style="background-color:rgb(39, 91, 235); color: white; font-weight: 500;">
+            '${team.name}'<div>'${team.title}'</div>
+        </div>
+        <div class="card-body" style="margin: 10px;">
+            <li class="list-group-item">Email: '${team.email}'</li>
+            <li class="list-group-item">GitHub: '${team.github}'</li>
+            <li class="list-group-item">ID#: </li>
+        </div>
+    </div>
+</body>"
+}
+
+function createManager() {
+    return "<body>
+    <!-- Card -->
+    <div class="card" style="margin: 30px; width: 18rem;">
+        <div class="card-header" style="background-color:rgb(39, 91, 235); color: white; font-weight: 500;">
+            '${team.name}'<div>'${team.title}'</div>
+        </div>
+        <div class="card-body" style="margin: 10px;">
+            <li class="list-group-item">Email: '${team.email}'</li>
+            <li class="list-group-item">Office Number: '${team.officeNumber}'</li>
+            <li class="list-group-item">ID#: </li>
+        </div>
+    </div>
+</body>"
+}
