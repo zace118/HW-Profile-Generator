@@ -4,7 +4,7 @@ const inquirer = require('inquirer'),
 
 let team = [];
 
-// Inquirer inquiring user for name, ID# and job title
+// Initial inquirer that asks for employee's name, email, and title. Then it utilizes "when" to ask the final question that depends on the user's title.
 function initialPrompt() {
     inquirer
         .prompt([
@@ -55,8 +55,9 @@ function initialPrompt() {
 
         ]).then(function (res) {
             console.log(res);
+            // This pushes the team member into the empty "team" array.
             team.push(res);
-
+            console.log(team);
             moreTeam();
 
         }).catch(function (err) {
@@ -80,7 +81,7 @@ function moreTeam() {
                 ]
             }
         ]).then(function (res) {
-            console.log(res.moreTeam);
+            // Depending on the user's answer, the initalPrompt function will either start again or end.
             if (res.moreTeam === 'Yes') {
                 initialPrompt();
             }
