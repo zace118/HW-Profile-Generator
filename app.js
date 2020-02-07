@@ -12,8 +12,8 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What is your ID number?',
-            name: 'id'
+            message: 'What is your email address?',
+            name: 'email'
         },
         {
             type: 'list',
