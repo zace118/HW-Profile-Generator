@@ -23,7 +23,7 @@ if (title === 'Manager'){
 >>>Functions to do soooo.....
 
 function createIntern() {
-    return "<body>
+    return `<body>
     <!-- Card -->
     <div class="card" style="margin: 30px; width: 18rem;">
         <div class="card-header" style="background-color:rgb(39, 91, 235); color: white; font-weight: 500;">
@@ -35,11 +35,11 @@ function createIntern() {
             <li class="list-group-item">ID#: </li>
         </div>
     </div>
-</body>"
+</body>`
 }
 
 function createEngineer() {
-    return "<body>
+    return `<body>
     <!-- Card -->
     <div class="card" style="margin: 30px; width: 18rem;">
         <div class="card-header" style="background-color:rgb(39, 91, 235); color: white; font-weight: 500;">
@@ -51,11 +51,11 @@ function createEngineer() {
             <li class="list-group-item">ID#: </li>
         </div>
     </div>
-</body>"
+</body>`
 }
 
 function createManager() {
-    return "<body>
+    return `<body>
     <!-- Card -->
     <div class="card" style="margin: 30px; width: 18rem;">
         <div class="card-header" style="background-color:rgb(39, 91, 235); color: white; font-weight: 500;">
@@ -67,5 +67,5 @@ function createManager() {
             <li class="list-group-item">ID#: </li>
         </div>
     </div>
-</body>"
+</body>`
 }
